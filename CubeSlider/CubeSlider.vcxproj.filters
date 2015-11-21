@@ -84,7 +84,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="sdl_exp.rc">
+    <ResourceCompile Include="CubeSlider.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>

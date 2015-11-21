@@ -21,6 +21,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{0603499C-67DC-40EF-AB87-92564A72B3D5}</ProjectGuid>
     <RootNamespace>sdl_exp</RootNamespace>
+    <ProjectName>CubeSlider</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
