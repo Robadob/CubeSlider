@@ -13,7 +13,7 @@
 #include "VisualisationScene.h"
 #include "Camera.h"
 #include "Axis.h"
-#include "SkyBox.h"
+#include "Skybox.h"
 
 #undef main
 
@@ -60,7 +60,7 @@ private:
 
     bool renderAxisState;
     Axis axis;
-    SkyBox *skybox;
+    Skybox *skybox;
 
     char* windowTitle;
     int windowWidth;

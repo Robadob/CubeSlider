@@ -150,8 +150,8 @@ void Entity::loadModelFromFile(const char *path, float modelScale)
     char buffer[100];
     float x,y,z;
     int f1a, f1b, f2a, f2b, f3a, f3b;
-    char materialFile[100] = "\0"; // @todo - this could be improved;
-    char materialName[100] = "\0"; // @todo - this could be improved;
+    char materialFile[100] = ""; // @todo - this could be improved;
+    char materialName[100] = ""; // @todo - this could be improved;
     //Open file
     FILE* file = fopen(path, "r");
     if (file == NULL){
