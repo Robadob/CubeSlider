@@ -69,19 +69,40 @@ void Camera::ascend(float distance){
     eye += up*distance;
 }
 /*
-Returns the projection matrix for use with shader uniforms or glLoadMatrixf() [after calling glMatrixMode(GL_PROJECTION)]
+Returns the projection matrix 
+For use with shader uniforms or glLoadMatrixf() [after calling glMatrixMode(GL_PROJECTION)]
 */
 glm::mat4 Camera::view(){
     return glm::lookAt(eye, eye + look, up);
 }
 /*
-Calls gluLookAt() for people using fixed function pipeline
+Calls gluLookAt() f
+For people using fixed function pipeline
 */
 void Camera::gluLookAt()
 {
     ::gluLookAt(
         eye.x, eye.y, eye.z,
         eye.x + look.x, eye.y + look.y, eye.z + look.z,
+        up.x, up.y, up.z
+        );
+}
+/*
+Returns the projection matrix from the perspective required for rendering a skybox(direcition only)
+For use with shader uniforms or glLoadMatrixf() [after calling glMatrixMode(GL_PROJECTION)]
+*/
+glm::mat4 Camera::skyboxView(){
+    return glm::lookAt(glm::vec3(0), look, up);
+}
+/*
+Calls gluLookAt() from the perspective required for rendering a skybox(direcition only) 
+For people using fixed function pipeline
+*/
+void Camera::skyboxGluLookAt()
+{
+    ::gluLookAt(
+        0, 0, 0,
+        look.x, look.y, look.z,
         up.x, up.y, up.z
         );
 }

@@ -138,6 +138,8 @@ void Shaders::reloadShaders(){
 }
 
 void Shaders::useProgram(){
+    if (!compileSuccessFlag)
+        return;
     glUseProgram(this->programId);
 
     glBindAttribLocation(this->programId, 0, "in_position");

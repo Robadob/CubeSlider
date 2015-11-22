@@ -127,10 +127,12 @@
   <ItemGroup>
     <ClCompile Include="Axis.cpp" />
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CubeMatrix.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Material.cpp" />
     <ClCompile Include="Shaders.cpp" />
+    <ClCompile Include="SkyBox.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="Visualisation.cpp" />
     <ClCompile Include="VisualisationScene.cpp" />
@@ -138,11 +140,13 @@
   <ItemGroup>
     <ClInclude Include="Axis.h" />
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="CubeMatrix.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="Quaternion.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Shaders.h" />
+    <ClInclude Include="SkyBox.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="Visualisation.h" />
     <ClInclude Include="VisualisationScene.h" />

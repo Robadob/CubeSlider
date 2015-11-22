@@ -24,7 +24,9 @@ public:
     void ascend(float distance);
     void roll(float distance);
     glm::mat4 view(); 
-    void gluLookAt();
+    void gluLookAt(); 
+    glm::mat4 skyboxView();
+    void skyboxGluLookAt();
     const glm::vec3 getEye();
     const glm::vec3 getLook();
 private:

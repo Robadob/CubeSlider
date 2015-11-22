@@ -2,6 +2,7 @@
 
 VisualisationScene::VisualisationScene(Camera* camera)
     : camera(camera)
+    , cm(12)
 {
     this->generate();
 }
@@ -33,5 +34,5 @@ Perform any render calls here
 */
 void VisualisationScene::render(glm::mat4 projection)
 {
-
+    cm.render();
 }

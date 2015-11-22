@@ -9,6 +9,7 @@
 
 #include "Camera.h"
 #include "Shaders.h"
+#include "CubeMatrix.h"
 
 class VisualisationScene
 {
@@ -23,6 +24,7 @@ public:
 
 private:
     Camera* camera;
+    CubeMatrix cm;
 
 };
 
