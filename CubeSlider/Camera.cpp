@@ -44,8 +44,8 @@ void Camera::turn(float yaw, float pitch){
     up = normalize(rotate(this->up, -pitch, this->right));
     if (stabilise)
     {
-        this->right = cross(pureUp, look);    //Right is perpendicular to look and (0,1,0)[Default up]
-        this->up = cross(right, look);        
+        this->right = normalize(cross(pureUp, look));    //Right is perpendicular to look and (0,1,0)[Default up]
+        this->up = normalize(cross(pureUp, look));
         if ((up.y < 0 && pureUp.y > 0) || (up.y > 0 && pureUp.y < 0))
         {
             up = -up;
